@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla del 3</title>
+    <link rel="stylesheet" href="multiplicar.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Tablas de multiplicar</h1>
+
+        <div class="campo-texto">
+            <label for="txtNumero">Escribe un número (No me dejes vacio 😢):</label>
+            <input type="text" id="txtNumero" placeholder="Ejemplo: 3" onblur="validarInput(this)">
+            <span id="errorTxtNumero" class="mensaje-error"></span>
+        </div>
+
+        <button class="boton" onclick="generarTablas()">PRESIONEME</button>
+
+        <div class="tabla" id="contenedor"></div>
+
+        <div class="pie-pagina">
+            <img src="logoTablas.png" alt="Tablas de multiplicar con Domenica Pugo">
+        </div>
+    </div>
+    
+
+    <script src="multiplicar.js"></script>
+</body>
+</html>
